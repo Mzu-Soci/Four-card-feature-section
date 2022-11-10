@@ -5,12 +5,12 @@
 }
 
 .container {
-    max-width: 375px;
+    /* max-width: 375px; */
     margin: auto;
 }
 
 .site-content {
-    margin: 2.5em;
+    /* margin: 2.5em; */
 }
 
 .head-container {
@@ -35,15 +35,16 @@ p {
 .head__p {
     font-size: small;
     letter-spacing: .05em;
-    padding: 1em 0 2.5em 0;
+    /* padding: 1em 0 2.5em 0; */
 }
 
 .role {
-    border: solid green 1px;
     border-radius: 10px;
     font-size: small;
-    padding: 1em;
+    padding: 1.9em;
     margin: 1.5em 0;
+    box-shadow: 1px 1px 10px hsl(229, 6%, 66%);
+    /* max-width: 250px; */
 }
 
 .role__1 {
@@ -68,11 +69,42 @@ h2 {
 
 img {
     position: relative;
-    left: 15em;
-    padding: 2.5em 0 .5em 0;
+    left: 14em;
+    padding-top: 2.5em;
 }
-
-
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+@media only screen and (min-width: 600px) {
+    .role {
+        /* border-radius: 10px;
+        font-size: small;
+        padding: 1.9em;
+        margin: 1.5em 0;
+        box-shadow: 1px 1px 10px hsl(229, 6%, 66%); */
+        max-width: 250px;
+    }
+
+    .middle_section {
+        border: solid 1px orange;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        max-width: 375px;
+        /* margin: auto; */
+    }
+
+    .site-content {
+        margin: 2.5em;
+    }
+
+    .head__p {
+        /* font-size: small; */
+        /* letter-spacing: .05em; */
+        padding: 1em 0 2.5em 0;
+    }
+}
